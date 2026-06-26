@@ -1,0 +1,28 @@
+{
+  "model_type": "random_forest",
+  "val_macro_f1": 0.9018245018573722,
+  "features": [
+    "day_of_week",
+    "month",
+    "age",
+    "bmi",
+    "has_pcos",
+    "cycle_length_days",
+    "cycle_day",
+    "days_since_period_start",
+    "bbt_celsius",
+    "weight_gain",
+    "hair_growth_excess",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food_frequent",
+    "regular_exercise"
+  ],
+  "classes": [
+    "Follicular",
+    "Luteal",
+    "Menstrual",
+    "Ovulation"
+  ]
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-50 text-warm-800 font-body;
+    background-image: 
+      radial-gradient(ellipse at 15% 15%, rgba(252, 231, 243, 0.4) 0%, transparent 45%),
+      radial-gradient(ellipse at 85% 85%, rgba(243, 232, 255, 0.3) 0%, transparent 45%),
+      radial-gradient(ellipse at 80% 10%, rgba(255, 228, 230, 0.35) 0%, transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* ─── Buttons ─── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           bg-rose-500 text-white font-body font-medium text-sm
+           rounded-2xl shadow-soft transition-all duration-200
+           hover:bg-rose-600 hover:shadow-glow hover:-translate-y-0.5
+           active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-rose-300
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3
+           bg-white text-rose-600 font-body font-medium text-sm
+           rounded-2xl border border-rose-200 shadow-card transition-all duration-200
+           hover:bg-rose-50 hover:-translate-y-0.5 hover:border-rose-300
+           active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-rose-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           text-warm-500 font-body font-medium text-sm rounded-xl
+           transition-colors duration-150 hover:text-rose-500 hover:bg-rose-50
+           focus:outline-none;
+  }
+
+  /* ─── Inputs ─── */
+  .input-field {
+    @apply w-full px-4 py-3 bg-white border border-warm-200 rounded-2xl
+           font-body text-sm text-warm-800 placeholder-warm-400
+           transition-all duration-200
+           focus:outline-none focus:border-rose-300 focus:ring-2 focus:ring-rose-100
+           hover:border-warm-300;
+  }
+
+  .input-label {
+    @apply block text-xs font-medium text-warm-500 uppercase tracking-wider mb-1.5;
+  }
+
+  /* ─── Cards ─── */
+  .card {
+    @apply bg-white/80 backdrop-blur-sm rounded-3xl border border-warm-100 
+           shadow-card p-6 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-soft hover:-translate-y-1;
+  }
+
+  /* ─── Phase pills ─── */
+  .phase-menstrual { @apply bg-rose-100 text-rose-700 border border-rose-200; }
+  .phase-follicular { @apply bg-amber-100 text-amber-700 border border-amber-200; }
+  .phase-ovulation { @apply bg-sage-100 text-sage-700 border border-sage-200; }
+  .phase-luteal { @apply bg-mauve-100 text-mauve-600 border border-mauve-200; }
+
+  /* ─── Decorative ─── */
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-md border border-white/70 rounded-3xl shadow-card;
+  }
+
+  .section-title {
+    @apply font-display text-3xl text-warm-800 leading-tight;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-rose-500 to-blush-500 bg-clip-text text-transparent;
+  }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #fda4af; border-radius: 99px; }
+
+/* ─── Page transitions ─── */
+.page-enter { animation: slideUp 0.4s ease-out; }

@@ -1,0 +1,27 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python / backend ---
+venv/
+venv64/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.vite/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log

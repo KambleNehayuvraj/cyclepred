@@ -1,0 +1,19 @@
+{
+  "model_type": "random_forest",
+  "val_mae_days": 4.523352087523694,
+  "val_r2": 0.7257532008305736,
+  "features": [
+    "age",
+    "bmi",
+    "has_pcos",
+    "weight_gain",
+    "hair_growth_excess",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food_frequent",
+    "regular_exercise",
+    "cycle_day",
+    "bbt_celsius"
+  ]
+}

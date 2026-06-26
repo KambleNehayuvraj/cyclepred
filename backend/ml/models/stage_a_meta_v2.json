@@ -1,0 +1,29 @@
+{
+  "model_type": "random_forest",
+  "val_auc": 0.8096991337923494,
+  "val_accuracy": 0.751,
+  "features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "bmi",
+    "waist_cm",
+    "hip_cm",
+    "waist_hip_ratio",
+    "bp_systolic",
+    "bp_diastolic",
+    "cycle_irregular",
+    "cycle_length_days",
+    "weight_gain",
+    "hair_growth_excess",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food_frequent",
+    "regular_exercise"
+  ],
+  "thresholds": {
+    "low": 0.4,
+    "high": 0.75
+  }
+}

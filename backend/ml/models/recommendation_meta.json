@@ -1,0 +1,36 @@
+{
+  "model_type": "multi_output_random_forest",
+  "macro_f1": 0.8867834083331088,
+  "hamming_loss": 0.05466666666666667,
+  "features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "bmi",
+    "waist_cm",
+    "hip_cm",
+    "waist_hip_ratio",
+    "bp_systolic",
+    "bp_diastolic",
+    "cycle_irregular",
+    "cycle_length_days",
+    "weight_gain",
+    "hair_growth_excess",
+    "skin_darkening",
+    "hair_loss",
+    "pimples",
+    "fast_food_frequent",
+    "regular_exercise"
+  ],
+  "labels": [
+    "needs_low_glycemic",
+    "needs_high_fiber",
+    "needs_anti_inflammatory",
+    "needs_weight_mgmt",
+    "needs_hormone_support",
+    "needs_general_wellness",
+    "needs_exercise",
+    "needs_yoga",
+    "needs_mood_enhancing"
+  ]
+}

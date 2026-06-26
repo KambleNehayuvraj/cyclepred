@@ -1,0 +1,10 @@
+name,locality,latitude,longitude,address_hint,opd_hours,hours_verified,notes
+Ruby Hall Clinic,Sassoon Road,18.5293,73.8786,"40 Sassoon Road, Pune","10:00 AM - 5:00 PM, Mon-Sat",yes,"Founded 1959, NABH/NABL accredited, 580+ beds, also has Hinjewadi and Wanowrie branches"
+Deenanath Mangeshkar Hospital,Erandwane,18.5089,73.8298,"Erandwane, Pune","Not independently verified - call ahead",no,"Charitable multispecialty hospital, established 2001"
+Apollo Hospitals Pune,Sahakar Nagar,18.4923,73.8645,"Sahakar Nagar, Pune","Not independently verified - call ahead",no,"Dedicated obstetrics & gynaecology department, includes reproductive endocrinologists"
+Jupiter Hospital,Baner,18.5593,73.7868,"Lane 3, Baner-Balewadi Road, Prathamesh Park, Baner, Pune 411045","9:00 AM - 7:30 PM, Mon-Sat",yes,"NABH accredited, 350 beds, dedicated obstetrics & gynaecology + IVF department"
+Cloudnine Hospitals,Baner,18.5593,73.7868,"Baner, Pune","Not independently verified - call ahead",no,"Maternity-focused chain, PCOS treatment listed as a core service"
+Noble Hospital,Hadapsar,18.5089,73.9260,"Magarpatta Road, Hadapsar, Pune","Not independently verified - call ahead",no,"Multispecialty hospital with gynecology department"
+AIMS Multispeciality Hospital,Aundh,18.5643,73.8077,"Aundh, Pune","Not independently verified - call ahead",no,"Known for PCOS and menstrual irregularity treatment"
+Lalwani Mother and Child Care Hospital,Wakad,18.5979,73.7610,"Wakad, Pune (also Baner, PCMC clinics)","Not independently verified - call ahead",no,"Specializes in PCOS, fibroids, endometriosis"
+Sahyadri Hospital,Deccan Gymkhana,18.5158,73.8412,"Deccan Gymkhana, Pune","Not independently verified - call ahead",no,"Multispecialty hospital with obstetrics & gynaecology"
