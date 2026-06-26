@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 const FONT   = "'Inter', -apple-system, 'Segoe UI', sans-serif"
 const ORANGE = '#f97316'
 const INK    = '#eef1f4'
@@ -238,7 +240,7 @@ const ModerateRiskPage = () => {
 
     try {
       const token = localStorage.getItem('cw_token')
-      const res   = await fetch('/predict/stage-b-confirm', {
+      const res   = await fetch(`${API_BASE}/predict/stage-b-confirm`, {
         method:  'POST',
         headers: {
           'Content-Type':  'application/json',

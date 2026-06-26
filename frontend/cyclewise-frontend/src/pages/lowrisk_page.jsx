@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 const FONT   = "'Inter', -apple-system, 'Segoe UI', sans-serif"
 const TEAL   = '#2dd4bf'
 const INK    = '#eef1f4'
@@ -188,7 +190,7 @@ const LowRiskPage = () => {
       setError(null)
       try {
         const token = localStorage.getItem('cw_token')
-        const res   = await fetch('/predict/weekly-plan', {
+        const res   = await fetch(`${API_BASE}/predict/weekly-plan`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         if (!res.ok) {
